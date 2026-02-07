@@ -14,7 +14,7 @@ trait HasStatusAudit
       $column = $model->getStatusColumn();
 
       if ($model->isDirty($column)) {
-        AuditableStatus::create([
+        StatusAudit::create([
           'model_type' => get_class($model),
           'model_id' => $model->id,
           'old_status' => $model->getOriginal($column),
