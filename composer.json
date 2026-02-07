@@ -1,0 +1,28 @@
+{
+    "name": "aitaddihamza/status-auditor",
+    "description": "Un auditeur de statut simple",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aitaddihamza\\StatusAuditor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aitaddihamza",
+            "email": "aitaddi.hamza365@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^12.50",
+        "illuminate/support": "^12.50"
+    },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Aitaddihamza\\StatusAuditor\\Providers\\StatusAuditorServiceProvider"
+      ]
+    }
+  }
+}
